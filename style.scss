@@ -1,19 +1,47 @@
 body {
-  background-color: #f4f4f9;  /* Light gray background */
-  color: #333;                /* Dark gray text */
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray text */
+  margin: 0;
+  padding: 0;
 }
 
+/* Header Customization */
 header {
-  background-color: #1f78b4;  /* Blue background for header */
-  color: white;               /* White text in the header */
+  background-color: #4CAF50; /* Green background */
   padding: 20px;
+  text-align: center;
 }
 
-a {
-  color: #1f78b4;             /* Blue links */
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
   text-decoration: none;
+  font-weight: 700;
 }
 
-a:hover {
-  color: #d9534f;             /* Red hover effect for links */
+header nav ul li a:hover {
+  color: #FFD700; /* Gold hover color */
+}
+
+/* Content Section Customization */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto; /* Center content with margin */
+}
+
+.intro img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px; /* Rounded corners for the image */
 }
