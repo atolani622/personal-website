@@ -1,0 +1,49 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Customization */
+header {
+  background-color: #4CAF50; /* Green background */
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header nav ul li a:hover {
+  color: #FFD700; /* Gold hover color */
+}
+
+/* Content Section Customization */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto; /* Center content with margin */
+}
+
+.intro img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+/*# sourceMappingURL=style.css.map */
