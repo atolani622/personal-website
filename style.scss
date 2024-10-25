@@ -1,65 +1,92 @@
-/* General Reset */
+// Variables for consistent colors and font sizes
+$primary-color: #0066cc;
+$secondary-color: #333;
+$background-color: #f8f9fa;
+$text-color: #444;
+$font-stack: 'Arial', sans-serif;
+
+// Global reset
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f9;
-    line-height: 1.6;
+  font-family: $font-stack;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-/* Navigation Styling */
+// Header and navigation styling
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+  background-color: $primary-color;
+  padding: 10px 0;
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+      margin: 0 15px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      &:hover {
+        color: darken($primary-color, 15%);
+      }
+    }
+  }
 }
 
-nav ul {
-    list-style-type: none;
+// Main content styling
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .intro, .about {
     text-align: center;
+    h1, h2 {
+      color: $primary-color;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+    ul {
+      list-style: disc inside;
+      text-align: left;
+      margin: 15px auto;
+      max-width: 500px;
+    }
+  }
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #ddd;
-}
-
-/* Section Styling */
-.intro, .about {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.intro h1, .about h2 {
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.intro p, .about p, .about ul {
-    margin-bottom: 10px;
-}
-
+// Image styling
 .intro-image, .about-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+// Footer or Contact section styling
+footer, .contact {
+  margin-top: 20px;
+  text-align: center;
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+      color: darken($primary-color, 15%);
+    }
+  }
 }
